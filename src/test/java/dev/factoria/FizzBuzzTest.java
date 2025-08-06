@@ -32,4 +32,17 @@ public class FizzBuzzTest {
 
     }
 
+    @Test
+    void testCheckNumberIfDivisionBy5and3_ShouldReturnFizzBuzz() {
+
+        int number = 15;
+        String expected = "FizzBuzz";
+
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        String result = fizzbuzz.checkNumber(number);
+
+        assertThat(result, is(equalTo(expected)));
+
+    }
+
 }
