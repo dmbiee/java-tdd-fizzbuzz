@@ -45,4 +45,17 @@ public class FizzBuzzTest {
 
     }
 
+    @Test
+    void testCheckNumberIfNotDivisionBy5and3_ShouldReturnNumTypeString() {
+
+        int number = 7;
+        String expected = "7";
+
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        String result = fizzbuzz.checkNumber(number);
+
+        assertThat(result, is(equalTo(expected)));
+
+    }
+
 }
