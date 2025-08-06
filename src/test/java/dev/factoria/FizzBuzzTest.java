@@ -14,10 +14,22 @@ public class FizzBuzzTest {
         String expected = "Fizz";
 
         FizzBuzz fizzbuzz = new FizzBuzz();
-
         String result = fizzbuzz.checkNumber(number);
 
         assertThat(result, is(equalTo(expected)));
+    }
+
+    @Test
+    void testCheckNumberIfDivisionBy5_ShouldReturnBuzz() {
+
+        int number = 5;
+        String expected = "Buzz";
+
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        String result = fizzbuzz.checkNumber(number);
+
+        assertThat(result, is(equalTo(expected)));
+
     }
 
 }
