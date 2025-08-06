@@ -58,4 +58,16 @@ public class FizzBuzzTest {
 
     }
 
+    @Test
+    void testCheckNumberIfNumberIncludeCharacter3_shouldReturnFizz() {
+
+        int number = 532;
+        String expected = "Fizz";
+
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        String result = fizzbuzz.checkNumber(number);
+
+        assertThat(result, is(equalTo(expected)));
+    }
+
 }
